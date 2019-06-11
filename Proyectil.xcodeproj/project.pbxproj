@@ -13,6 +13,11 @@
 		8B240D2F22AC2F2500FCCCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B240D2D22AC2F2500FCCCE3 /* Main.storyboard */; };
 		8B240D3B22AC2F2500FCCCE3 /* ProyectilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D3A22AC2F2500FCCCE3 /* ProyectilTests.swift */; };
 		8B240D4622AC2F2500FCCCE3 /* ProyectilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D4522AC2F2500FCCCE3 /* ProyectilUITests.swift */; };
+		8B240D5622AC36FE00FCCCE3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B240D5422AC36FE00FCCCE3 /* Realm.framework */; };
+		8B240D5722AC36FE00FCCCE3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */; };
+		8B240D5922AC37A900FCCCE3 /* ProyectSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */; };
+		8B240D5B22AC38DB00FCCCE3 /* PTProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */; };
+		8BD2370322AF1A48005F3A1D /* ProyectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		8B240D4122AC2F2500FCCCE3 /* ProyectilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B240D4522AC2F2500FCCCE3 /* ProyectilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectilUITests.swift; sourceTree = "<group>"; };
 		8B240D4722AC2F2500FCCCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B240D5422AC36FE00FCCCE3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProyectSB.storyboard; sourceTree = "<group>"; };
+		8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTProject.swift; sourceTree = "<group>"; };
+		8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B240D5622AC36FE00FCCCE3 /* Realm.framework in Frameworks */,
+				8B240D5722AC36FE00FCCCE3 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +92,7 @@
 				8B240D3922AC2F2500FCCCE3 /* ProyectilTests */,
 				8B240D4422AC2F2500FCCCE3 /* ProyectilUITests */,
 				8B240D2522AC2F2400FCCCE3 /* Products */,
+				8B240D5322AC36FE00FCCCE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +113,9 @@
 				8B240D2922AC2F2400FCCCE3 /* ViewController.swift */,
 				8B240D2B22AC2F2500FCCCE3 /* Assets.xcassets */,
 				8B240D2D22AC2F2500FCCCE3 /* Main.storyboard */,
+				8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */,
+				8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */,
+				8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */,
 				8B240D3022AC2F2500FCCCE3 /* Info.plist */,
 				8B240D3122AC2F2500FCCCE3 /* Proyectil.entitlements */,
 			);
@@ -122,6 +138,15 @@
 				8B240D4722AC2F2500FCCCE3 /* Info.plist */,
 			);
 			path = ProyectilUITests;
+			sourceTree = "<group>";
+		};
+		8B240D5322AC36FE00FCCCE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B240D5422AC36FE00FCCCE3 /* Realm.framework */,
+				8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B240D5922AC37A900FCCCE3 /* ProyectSB.storyboard in Resources */,
 				8B240D2C22AC2F2500FCCCE3 /* Assets.xcassets in Resources */,
 				8B240D2F22AC2F2500FCCCE3 /* Main.storyboard in Resources */,
 			);
@@ -254,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B240D5B22AC38DB00FCCCE3 /* PTProject.swift in Sources */,
 				8B240D2A22AC2F2400FCCCE3 /* ViewController.swift in Sources */,
 				8B240D2822AC2F2400FCCCE3 /* AppDelegate.swift in Sources */,
+				8BD2370322AF1A48005F3A1D /* ProyectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +453,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6ZA68A9C37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Proyectil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +476,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6ZA68A9C37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Proyectil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
