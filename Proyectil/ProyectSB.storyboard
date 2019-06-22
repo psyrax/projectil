@@ -29,18 +29,53 @@
         <!--Proyect View Controller-->
         <scene sceneID="Ksg-he-HTL">
             <objects>
-                <viewController id="HGY-bo-vB0" customClass="ProyectViewController" customModule="Proyectil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="proyectVC" id="HGY-bo-vB0" customClass="ProyectViewController" customModule="Proyectil" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eR0-UJ-emn">
-                        <rect key="frame" x="0.0" y="0.0" width="352" height="135"/>
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="188"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-xW-vJg">
-                                <rect key="frame" x="77" y="57" width="44" height="23"/>
+                            <box identifier="orangeColorBox" fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-d4-AtW">
+                                <rect key="frame" x="102" y="73" width="41" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </colorWell>
+                                <view key="contentView" ambiguous="YES" id="rqM-Xp-9g1">
+                                    <rect key="frame" x="1" y="1" width="39" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.89234215021133423" green="0.49406790733337402" blue="0.27445131540298462" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <button identifier="orangeRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGE-GB-A39">
+                                <rect key="frame" x="76" y="76" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="9mr-dH-nQd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="mgH-y9-9Oq"/>
+                                </connections>
+                            </button>
+                            <box identifier="yellowColorBox" fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-Fh-OFE">
+                                <rect key="frame" x="185" y="74" width="41" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" ambiguous="YES" id="f8T-Aa-mdH">
+                                    <rect key="frame" x="1" y="1" width="39" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.96280568838119507" green="0.77932578325271606" blue="0.30182364583015442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <button identifier="yellowRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-bL-Ss5">
+                                <rect key="frame" x="159" y="77" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="dZC-Ct-wJY">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="G6w-2j-tfG"/>
+                                </connections>
+                            </button>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7b-3C-oQY">
-                                <rect key="frame" x="77" y="96" width="255" height="22"/>
+                                <rect key="frame" x="77" y="149" width="255" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="hBb-JG-y0C">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -49,7 +84,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-SR-NM8">
-                                <rect key="frame" x="18" y="98" width="53" height="17"/>
+                                <rect key="frame" x="18" y="151" width="53" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Nombre" id="Hej-91-mIp">
                                     <font key="font" metaFont="system"/>
@@ -58,15 +93,18 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ywx-Ia-m9u">
-                                <rect key="frame" x="253" y="13" width="89" height="32"/>
+                                <rect key="frame" x="249" y="26" width="89" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Guardar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fLW-Ga-lHl">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="saveProject:" target="HGY-bo-vB0" id="3bn-rt-E0y"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIi-W7-TTQ">
-                                <rect key="frame" x="34" y="63" width="37" height="17"/>
+                                <rect key="frame" x="34" y="116" width="37" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Color" id="gQw-gd-fRp">
                                     <font key="font" metaFont="system"/>
@@ -75,19 +113,113 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZ6-c4-UKi">
-                                <rect key="frame" x="158" y="13" width="94" height="32"/>
+                                <rect key="frame" x="154" y="26" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Cancelar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HIm-0C-gA8">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="cancelProjectAdd:" target="HGY-bo-vB0" id="9Mu-fu-WEO"/>
+                                </connections>
                             </button>
+                            <box identifier="redColorBox" fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="2wi-52-pSv">
+                                <rect key="frame" x="102" y="110" width="41" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" ambiguous="YES" id="Fzv-MF-oTl">
+                                    <rect key="frame" x="1" y="1" width="39" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.75148361919999995" green="0.1786960065" blue="0.27058473230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <button identifier="redRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95m-22-zqt">
+                                <rect key="frame" x="76" y="113" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="rah-4f-hck">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="wcy-tn-iVM"/>
+                                </connections>
+                            </button>
+                            <box identifier="greenColorBox" fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-hJ-KYN">
+                                <rect key="frame" x="185" y="110" width="41" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" ambiguous="YES" id="jzb-SR-1xk">
+                                    <rect key="frame" x="1" y="1" width="39" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.31024205684661865" green="0.68312811851501465" blue="0.3842657208442688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <button identifier="greenRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yll-iC-zft">
+                                <rect key="frame" x="159" y="113" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="8jS-R2-G6O">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="vpZ-er-KJW"/>
+                                </connections>
+                            </button>
+                            <box identifier="blueColorBox" fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YDK-9I-9Eu">
+                                <rect key="frame" x="280" y="110" width="41" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" ambiguous="YES" id="Bke-o1-86s">
+                                    <rect key="frame" x="1" y="1" width="39" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.30394464731216431" green="0.67004203796386719" blue="0.83924603462219238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </box>
+                            <button identifier="blueRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3x-23-7KJ">
+                                <rect key="frame" x="254" y="113" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IEg-YX-brM">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="zZh-cB-8v8"/>
+                                </connections>
+                            </button>
+                            <button identifier="customRadio" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEG-to-us4">
+                                <rect key="frame" x="254" y="77" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="sax-ze-s2k">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="colorPickRadio:" target="HGY-bo-vB0" id="jbu-uH-ber"/>
+                                </connections>
+                            </button>
+                            <colorWell identifier="customColorBox" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-xW-vJg">
+                                <rect key="frame" x="278" y="74" width="44" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </colorWell>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="blueColor" destination="YDK-9I-9Eu" id="int-P4-uPL"/>
+                        <outlet property="blueRadio" destination="n3x-23-7KJ" id="fTN-7S-gQM"/>
+                        <outlet property="customRadio" destination="PEG-to-us4" id="zOd-jG-eh0"/>
+                        <outlet property="greenColor" destination="yE5-hJ-KYN" id="hkx-0B-rDU"/>
+                        <outlet property="greenRadio" destination="Yll-iC-zft" id="d8B-E0-zcJ"/>
+                        <outlet property="orangeColor" destination="pfE-d4-AtW" id="wap-N0-ucH"/>
+                        <outlet property="orangeRadio" destination="rGE-GB-A39" id="zF3-Ft-BBV"/>
+                        <outlet property="projectColor" destination="ScK-xW-vJg" id="T2f-qg-cs1"/>
+                        <outlet property="projectName" destination="I7b-3C-oQY" id="BY8-Sg-3NJ"/>
+                        <outlet property="redColor" destination="2wi-52-pSv" id="RlI-Yp-Gy5"/>
+                        <outlet property="redRadio" destination="95m-22-zqt" id="eFm-9U-uxy"/>
+                        <outlet property="yellowColor" destination="B4Z-Fh-OFE" id="SIp-e1-AEm"/>
+                        <outlet property="yellowRadio" destination="iZE-bL-Ss5" id="wix-vL-0YJ"/>
+                    </connections>
                 </viewController>
                 <customObject id="Nb8-E8-eFn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-335"/>
+            <point key="canvasLocation" x="318" y="-309"/>
         </scene>
     </scenes>
 </document>

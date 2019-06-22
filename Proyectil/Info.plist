@@ -20,13 +20,21 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Necesitamos usar  tu calendario.</string>
+	<key>NSContactsUsageDescription</key>
+	<string></string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Jose Espinoza Cuevas. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Necesitamos usar tus recordatorios.</string>
 </dict>
 </plist>

@@ -13,11 +13,17 @@
 		8B240D2F22AC2F2500FCCCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B240D2D22AC2F2500FCCCE3 /* Main.storyboard */; };
 		8B240D3B22AC2F2500FCCCE3 /* ProyectilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D3A22AC2F2500FCCCE3 /* ProyectilTests.swift */; };
 		8B240D4622AC2F2500FCCCE3 /* ProyectilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D4522AC2F2500FCCCE3 /* ProyectilUITests.swift */; };
-		8B240D5622AC36FE00FCCCE3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B240D5422AC36FE00FCCCE3 /* Realm.framework */; };
-		8B240D5722AC36FE00FCCCE3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */; };
 		8B240D5922AC37A900FCCCE3 /* ProyectSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */; };
 		8B240D5B22AC38DB00FCCCE3 /* PTProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */; };
 		8BD2370322AF1A48005F3A1D /* ProyectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */; };
+		C346293D22B0325500C6B8D9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C346293B22B0325500C6B8D9 /* Realm.framework */; };
+		C346293E22B0325500C6B8D9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C346293B22B0325500C6B8D9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C346293F22B0325500C6B8D9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C346293C22B0325500C6B8D9 /* RealmSwift.framework */; };
+		C346294022B0325500C6B8D9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C346293C22B0325500C6B8D9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C346294222B04D0B00C6B8D9 /* TasksSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C346294122B04D0B00C6B8D9 /* TasksSB.storyboard */; };
+		C346294422B04E0400C6B8D9 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346294322B04E0400C6B8D9 /* TaskViewController.swift */; };
+		C346294622B2AE4400C6B8D9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C346294522B2AE4400C6B8D9 /* EventKit.framework */; };
+		C346294822B2C58700C6B8D9 /* PTTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346294722B2C58700C6B8D9 /* PTTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C346293A22B015ED00C6B8D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C346294022B0325500C6B8D9 /* RealmSwift.framework in Embed Frameworks */,
+				C346293E22B0325500C6B8D9 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8B240D2422AC2F2400FCCCE3 /* Proyectil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyectil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B240D2722AC2F2400FCCCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,11 +72,15 @@
 		8B240D4122AC2F2500FCCCE3 /* ProyectilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B240D4522AC2F2500FCCCE3 /* ProyectilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectilUITests.swift; sourceTree = "<group>"; };
 		8B240D4722AC2F2500FCCCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B240D5422AC36FE00FCCCE3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
-		8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProyectSB.storyboard; sourceTree = "<group>"; };
 		8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTProject.swift; sourceTree = "<group>"; };
 		8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectViewController.swift; sourceTree = "<group>"; };
+		C346293B22B0325500C6B8D9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		C346293C22B0325500C6B8D9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		C346294122B04D0B00C6B8D9 /* TasksSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TasksSB.storyboard; sourceTree = "<group>"; };
+		C346294322B04E0400C6B8D9 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		C346294522B2AE4400C6B8D9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C346294722B2C58700C6B8D9 /* PTTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B240D5622AC36FE00FCCCE3 /* Realm.framework in Frameworks */,
-				8B240D5722AC36FE00FCCCE3 /* RealmSwift.framework in Frameworks */,
+				C346294622B2AE4400C6B8D9 /* EventKit.framework in Frameworks */,
+				C346293F22B0325500C6B8D9 /* RealmSwift.framework in Frameworks */,
+				C346293D22B0325500C6B8D9 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +114,8 @@
 		8B240D1B22AC2F2400FCCCE3 = {
 			isa = PBXGroup;
 			children = (
+				C346293B22B0325500C6B8D9 /* Realm.framework */,
+				C346293C22B0325500C6B8D9 /* RealmSwift.framework */,
 				8B240D2622AC2F2400FCCCE3 /* Proyectil */,
 				8B240D3922AC2F2500FCCCE3 /* ProyectilTests */,
 				8B240D4422AC2F2500FCCCE3 /* ProyectilUITests */,
@@ -116,8 +144,11 @@
 				8B240D5822AC37A900FCCCE3 /* ProyectSB.storyboard */,
 				8BD2370222AF1A48005F3A1D /* ProyectViewController.swift */,
 				8B240D5A22AC38DB00FCCCE3 /* PTProject.swift */,
+				C346294722B2C58700C6B8D9 /* PTTask.swift */,
 				8B240D3022AC2F2500FCCCE3 /* Info.plist */,
 				8B240D3122AC2F2500FCCCE3 /* Proyectil.entitlements */,
+				C346294122B04D0B00C6B8D9 /* TasksSB.storyboard */,
+				C346294322B04E0400C6B8D9 /* TaskViewController.swift */,
 			);
 			path = Proyectil;
 			sourceTree = "<group>";
@@ -143,8 +174,7 @@
 		8B240D5322AC36FE00FCCCE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8B240D5422AC36FE00FCCCE3 /* Realm.framework */,
-				8B240D5522AC36FE00FCCCE3 /* RealmSwift.framework */,
+				C346294522B2AE4400C6B8D9 /* EventKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +189,7 @@
 				8B240D2022AC2F2400FCCCE3 /* Sources */,
 				8B240D2122AC2F2400FCCCE3 /* Frameworks */,
 				8B240D2222AC2F2400FCCCE3 /* Resources */,
+				C346293A22B015ED00C6B8D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +248,11 @@
 				TargetAttributes = {
 					8B240D2322AC2F2400FCCCE3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					8B240D3522AC2F2500FCCCE3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -253,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C346294222B04D0B00C6B8D9 /* TasksSB.storyboard in Resources */,
 				8B240D5922AC37A900FCCCE3 /* ProyectSB.storyboard in Resources */,
 				8B240D2C22AC2F2500FCCCE3 /* Assets.xcassets in Resources */,
 				8B240D2F22AC2F2500FCCCE3 /* Main.storyboard in Resources */,
@@ -282,7 +319,9 @@
 			files = (
 				8B240D5B22AC38DB00FCCCE3 /* PTProject.swift in Sources */,
 				8B240D2A22AC2F2400FCCCE3 /* ViewController.swift in Sources */,
+				C346294422B04E0400C6B8D9 /* TaskViewController.swift in Sources */,
 				8B240D2822AC2F2400FCCCE3 /* AppDelegate.swift in Sources */,
+				C346294822B2C58700C6B8D9 /* PTTask.swift in Sources */,
 				8BD2370322AF1A48005F3A1D /* ProyectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,10 +491,11 @@
 				CODE_SIGN_ENTITLEMENTS = Proyectil/Proyectil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6ZA68A9C37;
+				DEVELOPMENT_TEAM = Y4D3T29XT8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = Proyectil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,10 +515,11 @@
 				CODE_SIGN_ENTITLEMENTS = Proyectil/Proyectil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6ZA68A9C37;
+				DEVELOPMENT_TEAM = Y4D3T29XT8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = Proyectil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
