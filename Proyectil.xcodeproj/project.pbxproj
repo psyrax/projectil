@@ -491,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = Proyectil/Proyectil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y4D3T29XT8;
+				DEVELOPMENT_TEAM = 6ZA68A9C37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -515,7 +515,7 @@
 				CODE_SIGN_ENTITLEMENTS = Proyectil/Proyectil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y4D3T29XT8;
+				DEVELOPMENT_TEAM = 6ZA68A9C37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",

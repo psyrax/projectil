@@ -93,14 +93,10 @@ class TaskViewController: NSViewController {
             self.dueDate.dateValue = currentDate
             
            
-            self.meetingHourPicker.minDate = currentDate
             self.meetingHourPicker.dateValue = currentDate
             
-            self.meetingEndHourPicker.minDate = currentDate
             self.meetingEndHourPicker.dateValue = self.meetingHourPicker.calendar!.date(byAdding: .minute, value: 15, to: self.meetingHourPicker.dateValue)!
         } else {
-
-            print(self.newTask)
             self.projectPopup.selectItem(withTitle: self.newTask.project!.name)
             self.setProjectColor(projectIndex: self.projectPopup.indexOfSelectedItem)
             self.taskName.stringValue = self.newTask.name
@@ -109,7 +105,6 @@ class TaskViewController: NSViewController {
             self.dueDate.minDate = self.newTask.dueDate
             self.dueDate.dateValue = self.newTask.dueDate
             
-            self.meetingHourPicker.minDate =  self.newTask.dueDate
             self.meetingHourPicker.dateValue =  self.newTask.dueDate
             if self.newTask.eventId.isEmpty {
                 print("no calendar")
